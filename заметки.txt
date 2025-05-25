@@ -1,0 +1,3 @@
+Шрифты
+Manrope   Manrope    Manrope     Manrope
+600        800         500         700

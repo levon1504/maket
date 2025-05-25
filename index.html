@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/font/fonts.css" />
+    <link rel="stylesheet" href="/reset/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Creatix</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__cap">
+          <div class="container">
+            <div class="header__cap-inner">
+              <a href="#" class="header__logo logo">
+                <img src="/img/SVG/Logo.svg" alt="logo" />
+              </a>
+              <nav class="header__nav">
+                <div class="header__nav-menu">
+                  <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#">About us</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#">Services</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="header__nav-item">
+                      <a class="header__nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__nav-line"></div>
+                <div class="header__nav-assictance">
+                  <div class="header__assictance-logo">
+                    <img
+                      src="/img/SVG/Assistance Icon.svg"
+                      alt="Assistance Icon"
+                    />
+                    <div class="header__assictance-cont">
+                      <div class="assictance__cont-text">Road Assistance</div>
+                      <div class="assictance__link">
+                        <a href="tel:1800 265 24 52">1800 265 24 52</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="header__body">
+          <div class="container">
+            <div class="body__inner">
+              <div class="header__content">
+                <h1 class="header__text">
+                  Get your vehicle service done online at one place
+                </h1>
+                <div class="bottomsi">
+                  <a class="button" href="#"> Book a service </a>
+                  <div class="video_button__header">
+                    <a
+                      class="video_button"
+                      href="/video/3066460-uhd_4096_2160_24fps.mp4"
+                      ><img
+                        class="video_button-img"
+                        src="/img/SVG/Play icon.svg"
+                        alt="play icon "
+                      /><span class="button__playtext">Play Video</span></a
+                    >
+                  </div>
+                </div>
+                <div class="video__box">
+                  <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <video
+                        id="myVideo"
+                        src="/video/3066460-uhd_4096_2160_24fps.mp4"
+                        width="100%"
+                        height="450px"
+                        controls
+                        muted
+                        loop
+                      ></video>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__open">
+                  <img
+                    class="watch__icon"
+                    src="/img/SVG/Icon.svg"
+                    alt="watch icon"
+                  />
+                  <div class="header__open-text">
+                    <div class="open-text__1">We are open</div>
+                    <div class="open-text__2">
+                      Monday to Friday 9:00 AM to 10:00 AM
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__img">
+                <img class="mex_img" src="/img/механик.jpeg" alt="mechanic" />
+              </div>
+              <div class="quick__service">
+                <img class="iconic" src="/img/SVG/Circle.svg" alt="" />
+                <span class="quick__text">Quick service</span>
+              </div>
+              <div class="quick__service-rating">
+                <div class="card">
+                  <div class="rating_stats">
+                    <h3 id="output">0/5</h3>
+                    <span id="rat_text">Rating</span>
+                  </div>
+                  <span onclick="gfg(1)" class="star"
+                    ><img src="/img/SVG/Star 1.svg" alt=""
+                  /></span>
+                  <span onclick="gfg(2)" class="star"
+                    ><img src="/img/SVG/Star 1.svg" alt="" />
+                  </span>
+                  <span onclick="gfg(3)" class="star"
+                    ><img src="/img/SVG/Star 1.svg" alt=""
+                  /></span>
+                  <span onclick="gfg(4)" class="star"
+                    ><img src="/img/SVG/Star 1.svg" alt=""
+                  /></span>
+                  <span onclick="gfg(5)" class="star"
+                    ><img src="/img/SVG/Star 1.svg" alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="sevris__nav">
+        <div class="sevris__nav-container">
+          <div class="sevris__nav-description">
+            <h3 class="servis_text">What we Offer</h3>
+            <h1 class="servis_text2">
+              We offer full service auto repair & maintenance
+            </h1>
+          </div>
+          <div class="sevris__nav-button">
+            <button href="#" type="button" class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item car"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/car.svg"
+                  alt="car"
+                /><br /><span>Diagnostics </span>
+              </a>
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item deticon"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/deticon.svg"
+                  alt="deticon"
+                /><br /><span>Engine Repair</span></a
+              >
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item" id="wheel"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/coleso.svg"
+                  alt="wheel" /></a
+              ><span>Wheel Repair</span>
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item canist"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/Canist.svg"
+                  alt="canist" /></a
+              ><span>Oil Filter</span>
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item car2"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/car2.svg"
+                  alt="car2" /></a
+              ><span>Body Work</span>
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item acum"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/acum.svg"
+                  alt="acum" /></a
+              ><span>Batteries</span>
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item shield"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/Shit.svg"
+                  alt="
+  shield" /></a
+              ><span>Insurance Claim</span>
+            </button>
+            <button class="sevris__nav-content">
+              <a href="#" class="sevris__nav-item"
+                ><img
+                  class="sevris__img"
+                  src="/img/SVG/cluch.svg"
+                  alt="
+  key" /></a
+              ><span>Custom Service</span>
+            </button>
+          </div>
+          <a class="sevris__nav-button__transfer" href="#">
+            Learn about services<img
+              id="vector__right"
+              class="sevris__img"
+              src="/img/SVG/vec.svg"
+              alt="vec"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="process_sectinon">
+          <div class="process_left">
+            <div class="process_left-h1">
+              <h1>We follow a clear process to help you out.</h1>
+            </div>
+            <div class="process_left-h3">
+              <h3>
+                Through True Rich Attended does no end it his mother since real
+                had half every him case in packages enquire
+              </h3>
+            </div>
+            <a href="#" class="button">Learn more</a>
+          </div>
+          <div class="process_right">
+            <div class="step1 steps">
+              <div class="step_left">
+                <div class="ellipse__big">01</div>
+                <div class="ellipse_small el1"></div>
+                <div class="broken__line l1"></div>
+              </div>
+              <div class="step__right">
+                <h1>Get a Quote</h1>
+                <span
+                  >Through True Rich Attended does no end it his mother since
+                  real had half every.</span
+                >
+              </div>
+            </div>
+            <div class="step2 steps">
+              <div class="step_left">
+                <div class="ellipse__big">02</div>
+                <div class="ellipse_small el2"></div>
+                <div class="broken__line l2"></div>
+              </div>
+              <div class="step__right">
+                <h1>Book an Appointment</h1>
+                <span
+                  >Through True Rich Attended does no end it his mother since
+                  real had half every.</span
+                >
+              </div>
+            </div>
+            <div class="step3 steps">
+              <div class="step_left">
+                <div class="ellipse__big">03</div>
+                <div class="ellipse_small el3"></div>
+              </div>
+              <div class="step__right">
+                <h1>Get your Service Done</h1>
+                <span
+                  >Through True Rich Attended does no end it his mother since
+                  real had half every.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="CTA">
+        <img src="/img/Машина зад.jpeg" alt="trunk" /><img
+          src="/img/акумщипцы.jpeg"
+          alt="battery charging"
+        />
+        <div class="CTA__content">
+          <h1>Get in touch with us for your service related query</h1>
+          <div class="CTA__content-button">
+            <a href="#" class="button__black">Contact Us</a>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="experiens">
+          <div class="experiens_item">
+            <h3>20+</h3>
+            <span>Proffesional</span>
+          </div>
+          <div class="experiens_item">
+            <h3>10+</h3>
+            <span>Years Eperience</span>
+          </div>
+          <div class="experiens_item">
+            <h3>12K+</h3>
+            <span>Service Closed</span>
+          </div>
+          <div class="experiens_item">
+            <h3>100%</h3>
+            <span>Customer Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="brand__row">
+        <div class="container">
+          <div class="brand__row-conten">
+            <div class="brand__row-h1"><h1>Brands we Serve</h1></div>
+            <div class="brand__row-item">
+              <div class="brand__item">
+                <a href="#"
+                  ><img src="/img/logosvg/logo-8 1.svg" alt="logo"
+                /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"><img src="/img/logosvg/logo-6.svg" alt="logo" /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"
+                  ><img src="/img/logosvg/logo-7 1.svg" alt="logo"
+                /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"><img src="/img/logosvg/logo-3.svg" alt="logo" /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"
+                  ><img src="/img/logosvg/logo-1 1.svg" alt="logo"
+                /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"
+                  ><img src="/img/logosvg/logo-8 1.svg" alt="logo"
+                /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"><img src="/img/logosvg/logo-6.svg" alt="logo" /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"
+                  ><img src="/img/logosvg/logo-7 1.svg" alt="logo"
+                /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"><img src="/img/logosvg/logo-3.svg" alt="logo" /></a>
+              </div>
+              <div class="brand__item">
+                <a href="#"
+                  ><img src="/img/logosvg/logo-1 1.svg" alt="logo"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="blog__selection">
+        <div class="container">
+          <div class="blog__text">
+            <div class="blog__text-h1"><h1>Our blog</h1></div>
+            <div class="blog__text-imtem">
+              <a href="#" class="blog__link">Latest</a>
+              <a href="#" class="blog__link">Popular</a>
+              <a href="#" class="blog__link">Favorites</a>
+            </div>
+          </div>
+          <div class="blog__content">
+            <div class="blog__item">
+              <img src="/img/приборы.jpeg" alt="speedometer" /><span
+                class="then__posted"
+                >Posted on October 6th 2021</span
+              ><span class="post__first"
+                >5 Genius Car Accessories You Should Never Drive Without</span
+              ><span class="post_item"
+                >We provide a full range of front end mechanical repairs for all
+                makes and models We provide a full range of front end mechanical
+                repairs for all makes and models</span
+              >
+            </div>
+            <div class="blog__item">
+              <img src="/img/руль.jpeg" alt="steering wheel" /><span
+                class="then__posted"
+                >Posted on October 6th 2021</span
+              ><span class="post__first"
+                >5 Genius Car Accessories You Should Never Drive Without</span
+              ><span class="post_item"
+                >We provide a full range of front end mechanical repairs for all
+                makes and models We provide a full range of front end mechanical
+                repairs for all makes and models</span
+              >
+            </div>
+            <div class="blog__item">
+              <img src="/img/инструменты.jpeg" alt="tools" /><span
+                class="then__posted"
+                >Posted on October 6th 2021</span
+              ><span class="post__first"
+                >We provide blow straight past it with the wheels skidding</span
+              ><span class="post_item"
+                >We provide a full range of front end mechanical repairs for all
+                makes and models We provide a full range of front end mechanical
+                repairs for all makes and models</span
+              >
+            </div>
+            <div class="blog__item">
+              <img src="/img/шины.jpeg" alt="tires" /><span class="then__posted"
+                >Posted on October 6th 2021</span
+              ><span class="post__first"
+                >We provide blow straight past it with the wheels skidding</span
+              ><span class="post_item"
+                >We provide a full range of front end mechanical repairs for all
+                makes and models We provide a full range of front end mechanical
+                repairs for all makes and models</span
+              >
+            </div>
+            <div class="blog__item">
+              <img
+                src="/img/силения.jpeg"
+                alt="
+salon"
+              /><span class="then__posted">Posted on October 6th 2021</span
+              ><span class="post__first"
+                >5 Genius Car Accessories You Should Never Drive Without</span
+              ><span class="post_item"
+                >We provide a full range of front end mechanical repairs for all
+                makes and models We provide a full range of front end mechanical
+                repairs for all makes and models</span
+              >
+            </div>
+            <div class="blog__item">
+              <img src="/img/машина.jpeg" alt="car" /><span class="then__posted"
+                >Posted on October 6th 2021</span
+              ><span class="post__first"
+                >5 Genius Car Accessories You Should Never Drive Without</span
+              ><span class="post_item"
+                >We provide a full range of front end mechanical repairs for all
+                makes and models We provide a full range of front end mechanical
+                repairs for all makes and models</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container">
+          <div class="team__inner">
+            <div class="team_inner-h1">
+              <h1>Our customers say the nicest things about our service</h1>
+            </div>
+            <div class="team__slider">
+              <div class="team__slider-box">
+                <div class="team__image-box">
+                  <img src="/img/без очков.png" alt="в очках" />
+                  <div class="name__city">
+                    <div class="name">Smith Johnson</div>
+                    <div class="city">New york</div>
+                  </div>
+                </div>
+                <div class="team__info">
+                  I have got my car repaired at Finsweet many times before, they
+                  are good at what they do. Not only did they repair my car in a
+                  short comprehensive look on all the working
+                </div>
+              </div>
+              <!-- Добавьте дополнительные слайды здесь -->
+              <div class="team__slider-box">
+                <div class="team__image-box">
+                  <img src="/img/без очков.png" alt="в очках" />
+                  <div class="name__city">
+                    <div class="name">Smith Johnson</div>
+                    <div class="city">New york</div>
+                  </div>
+                </div>
+                <div class="team__info">
+                  I have got my car repaired at Finsweet many times before, they
+                  are good at what they do. Not only did they repair my car in a
+                  short comprehensive look on all the working
+                </div>
+              </div>
+              <div class="team__slider-box">
+                <div class="team__image-box">
+                  <img src="/img/без очков.png" alt="в очках" />
+                  <div class="name__city">
+                    <div class="name">Smith Johnson</div>
+                    <div class="city">New york</div>
+                  </div>
+                </div>
+                <div class="team__info">
+                  I have got my car repaired at Finsweet many times before, they
+                  are good at what they do. Not only did they repair my car in a
+                  short comprehensive look on all the working
+                </div>
+              </div>
+              <div class="team__slider-box">
+                <div class="team__image-box">
+                  <img src="/img/без очков.png" alt="в очках" />
+                  <div class="name__city">
+                    <div class="name">Smith Johnson</div>
+                    <div class="city">New york</div>
+                  </div>
+                </div>
+                <div class="team__info">
+                  I have got my car repaired at Finsweet many times before, they
+                  are good at what they do. Not only did they repair my car in a
+                  short comprehensive look on all the working
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="/js/cript.js"></script>
+</html>
