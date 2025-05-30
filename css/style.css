@@ -714,6 +714,7 @@ video {
 .team {
   background-color: #f2f2f2;
   height: 938px;
+  position: relative;
 }
 .team__inner {
   display: flex;
@@ -777,21 +778,12 @@ video {
 }
 /*-------------------------------------------------------------*/
 .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 400px;
 }
 
-/* Остальные стили остаются без изменений */
-.slick-dots {
-  bottom: 0; /* Расположение по вертикали */
-  text-align: center; /* Центрирование точек */
-}
-
-/* Стиль для каждой точки */
-.slick-dots li {
-  display: inline-block; /* Отображение точек в строку */
-  margin: 0 5px; /* Отступ между точками */
-}
-
-/* Стиль для неактивной точки */
 .slick-dots li button {
   width: 20px; /* Ширина точки (можно изменить) */
   height: 20px; /* Высота точки (можно изменить) */
@@ -799,8 +791,83 @@ video {
   background-size: contain; /* Масштабирование изображения */
   border: none; /* Убираем рамку */
 }
-
-/* Стиль для активной точки */
 .slick-dots li.slick-active button {
-  background: url("/img/SVG/Line Orange.svg") no-repeat center center; /* Фоновое изображение для активной точки */
+  background: url("/img/SVG/Line\ Orange.svg") no-repeat center center; /* Фоновое изображение для активной точки */
+}
+.slick-dots li button:before {
+  color: #939191;
+  font-size: 0px;
+}
+/*----------------------------------------------------------------*/
+.slick-prev,
+.slick-next {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 420px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.slick-next {
+  background-color: #ffffff;
+  width: 48px;
+  height: 48px;
+}
+.slick-prev {
+  position: absolute;
+  left: 525px;
+}
+.slick-prev:before {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  content: url("/img/SVG/Arrow.svg"); /* Ссылка на изображение левой стрелки */
+  width: 48px;
+  height: 48px;
+}
+
+.slick-next:before {
+  content: url("/img/SVG/ArrowRight.svg"); /* Ссылка на изображение правой стрелки */
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.slick-prev:hover::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: url(/img/SVG/ArowWhiteL.svg);
+  background-color: #1e1b1b;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  transition: color 0.5s;
+}
+.slick-next:hover::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: url(/img/SVG/ArowWhiteR.svg);
+  background-color: #1e1b1b;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  transition: color 0.5s;
+}
+
+/*-------------------------------------------------------------------*/
+.section__FAQ {
+  background-color: #e2e6e9;
+  height: 1140px;
 }
