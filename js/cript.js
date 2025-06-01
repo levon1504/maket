@@ -69,3 +69,32 @@ $(".team__slider").slick({
   slidesToShow: 1,
   adaptiveHeight: true,
 });
+
+$(document).ready(function () {
+  $(".section__FAQ-link").on("click", function (e) {
+    e.preventDefault();
+
+    // Переключаем класс активности на ссылке
+    $(this).toggleClass("section__FAQ-link-active");
+
+    // Находим следующий параграф и переключаем его видимость
+    $(this)
+      .closest(".section__item-head")
+      .next(".section__item-text")
+      .slideToggle();
+  });
+});
+ymaps.ready(function () {
+  var map = new ymaps.Map("map", {
+    center: [40.714627, -74.002863], // Координаты Москвы
+    zoom: 10,
+  });
+  map.controls.remove("geolocationControl"); // удаляем геолокацию
+  map.controls.remove("searchControl"); // удаляем поиск
+  map.controls.remove("trafficControl"); // удаляем контроль трафика
+  map.controls.remove("typeSelector"); // удаляем тип
+  map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+  map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+  map.controls.remove("rulerControl"); // удаляем контрол правил
+  map.behaviors.disable(["scrollZoom"]); // отключаем скролл карты (опционально)
+});
